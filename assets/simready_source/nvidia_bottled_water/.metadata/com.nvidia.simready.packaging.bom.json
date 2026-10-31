@@ -1,0 +1,299 @@
+{
+  "format_version": "1.0",
+  "items": [
+    {
+      "relative_path": "simready_usd/sm_food_beverage_bottledWater_b01_01.usd",
+      "size": 20873,
+      "hash": {
+        "sha256": "8b718ff69d8b2af4f4a79d1b38125c681e6a925da6cb13f5e3c62bcc84c2b4fb"
+      }
+    },
+    {
+      "relative_path": "simready_usd/.thumbs/sm_food_beverage_bottledWater_b01_01_thumbnail.png",
+      "size": 511449,
+      "hash": {
+        "sha256": "6061c849beb99c7d9be19641f10dc3bb242b4a23cd76af5f3457daeed9bec7ee"
+      }
+    },
+    {
+      "relative_path": "simready_usd/.thumbs/256x256/sm_food_beverage_bottledWater_b01_01.usd.png",
+      "size": 811321,
+      "hash": {
+        "sha256": "761b24c5db1010bcc3843f0e701361644a4c39515e0f414c7891a1cc87181a42"
+      }
+    },
+    {
+      "relative_path": "simready_usd/.thumbs/256x256/sm_food_beverage_bottledWater_b01_01.usd_light.png",
+      "size": 338566,
+      "hash": {
+        "sha256": "a9957088e67682fe60024822d237cafa08802dc2a055e45364d9fa3fb159c531"
+      }
+    },
+    {
+      "relative_path": "simready_usd/.thumbs/256x256/sm_food_beverage_bottledWater_b01_01.usd_transparent.png",
+      "size": 199004,
+      "hash": {
+        "sha256": "e775dc9875f607fe9c9aa480069ba9655477c2c7b70e313a64cc460f6f8f33f4"
+      }
+    },
+    {
+      "relative_path": "simready_usd/Textures/t_bottledWater_white_b01_alb.png",
+      "size": 361172,
+      "hash": {
+        "sha256": "7c766f1aa65c83888d2d2ea0a3e3cbcc5206a9ca499fc6cdac2467840466bb84"
+      }
+    },
+    {
+      "relative_path": "simready_usd/Textures/t_bottledWater_white_b01_orm.png",
+      "size": 603196,
+      "hash": {
+        "sha256": "615d819b457c051f6a7ba57b9efab98953e0914eafb50ec535b90c548c48e1d6"
+      }
+    },
+    {
+      "relative_path": "simready_usd/Textures/t_bottledWater_white_b01_nor.png",
+      "size": 770357,
+      "hash": {
+        "sha256": "e329429d449792558b2aa1a876a8cf587c3cc2499f987184f22b4f0859a629ee"
+      }
+    },
+    {
+      "relative_path": "simready_usd/Textures/.thumbs/256x256/t_bottledWater_white_b01_alb.png.png",
+      "size": 44528,
+      "hash": {
+        "sha256": "14d365a92c76e88eb2acc0ea25eb1bd28ea0ac9a0fff7ece26bf2c2c19c7cbfc"
+      }
+    },
+    {
+      "relative_path": "simready_usd/Textures/.thumbs/256x256/t_bottledWater_white_b01_nor.png.png",
+      "size": 48339,
+      "hash": {
+        "sha256": "eeb36664af13ca14a1f76eb3b05a1e540c7b5b03a5abeb5ccdfa3262190aaf27"
+      }
+    },
+    {
+      "relative_path": "simready_usd/Textures/.thumbs/256x256/t_bottledWater_white_b01_orm.png.png",
+      "size": 49836,
+      "hash": {
+        "sha256": "271aa15578ee1586e8d680a0d2ee74cb3ffe10ac47bafb83f8ecbc66094f867a"
+      }
+    },
+    {
+      "relative_path": "simready_usd/Textures/.thumbs/512x512/t_bottledWater_white_b01_alb.png.png",
+      "size": 156013,
+      "hash": {
+        "sha256": "7c59a23ee01ae56af8b83076c6d0fe31f15b05ed6e27dc3bd917db31cb9e1114"
+      }
+    },
+    {
+      "relative_path": "simready_usd/Textures/.thumbs/512x512/t_bottledWater_white_b01_nor.png.png",
+      "size": 206294,
+      "hash": {
+        "sha256": "7884809cc060309c3c4007c963114cc445a25e00792efe805a6d841bd6ecf839"
+      }
+    },
+    {
+      "relative_path": "simready_usd/Textures/.thumbs/512x512/t_bottledWater_white_b01_orm.png.png",
+      "size": 183533,
+      "hash": {
+        "sha256": "d6e300b03835c0e900119b386f5525001e3aa012b44f34f04ad6f618ea01358c"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/geometries.usd",
+      "size": 355482,
+      "hash": {
+        "sha256": "d47491b2e89317219e00257297c3bebc3373164f827db7b35e1f7f93de2d5526"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/base.usda",
+      "size": 16181,
+      "hash": {
+        "sha256": "fd4528f9ee0e3dfa1fa886cd9b6a9d33868721a26be0ce30eeb757519f76beac"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/instances.usda",
+      "size": 7784,
+      "hash": {
+        "sha256": "f567bf13df74447e2fe21d4bde6338014daafa9f954a133d011fc2939366a167"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/instances_mujoco.usda",
+      "size": 8328,
+      "hash": {
+        "sha256": "203cab877bc6b9510c4cbac6389522afc35cea74facfec8ebdd2c8ea9a24a0e0"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/instances_newton.usda",
+      "size": 8030,
+      "hash": {
+        "sha256": "60b968f3ab8835589650d0db22c1168c92ea88f082c5375186c66075892d9427"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/instances_physx.usda",
+      "size": 8064,
+      "hash": {
+        "sha256": "570bf624ab052327b99f8d20dfafb487e8b9ec894bc176ffa7d02ab5b958c6a1"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/materials.usda",
+      "size": 14876,
+      "hash": {
+        "sha256": "5ae209b6935d78af4a3bca5b5e39be0f95139b344ae44d1bc4b2a3d7c0efe671"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/MuJoCo/disabled.usda",
+      "size": 4474,
+      "hash": {
+        "sha256": "70a94c34c22ccd721cdd20d0e88a38c0c5dc167e8bf383422736714e3d35c6dd"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/MuJoCo/enabled.usda",
+      "size": 6351,
+      "hash": {
+        "sha256": "d7767211e80bb200fc2e2f1360746e13f1c2086b389ce3eebb16e401ade4d1b2"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/Newton/enabled.usda",
+      "size": 5701,
+      "hash": {
+        "sha256": "3040301e98fdd0931dcb8638f773f7bb44e7b883ad42f6cc3da22d9a244d861a"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/Newton/disabled.usda",
+      "size": 4474,
+      "hash": {
+        "sha256": "70a94c34c22ccd721cdd20d0e88a38c0c5dc167e8bf383422736714e3d35c6dd"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/PhysX/disabled.usda",
+      "size": 4474,
+      "hash": {
+        "sha256": "70a94c34c22ccd721cdd20d0e88a38c0c5dc167e8bf383422736714e3d35c6dd"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/PhysX/enabled.usda",
+      "size": 5155,
+      "hash": {
+        "sha256": "1684ec9c653c5def6afe59e59945ec63a05309fd4566924030edc73e213c5c01"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/Physics/physics.usda",
+      "size": 6294,
+      "hash": {
+        "sha256": "b08cf0b39de7ac0ee42b94886243fdfc7609d3d8cb3ac8cf798f6fe0079c19a1"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/OmniGlass_Opacity.mdl",
+      "size": 17706,
+      "hash": {
+        "sha256": "b6110a46bb9e8cd94f20cf7d78992f6f81cd5546bbab277cf950256faae80261"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/OmniGlass.mdl",
+      "size": 10205,
+      "hash": {
+        "sha256": "31a93eda2387572db4930a8b22f51e100716809e859505c97b82a17ac43d1e30"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/OmniPBR.mdl",
+      "size": 16010,
+      "hash": {
+        "sha256": "6e6b3acbccd236e21a6c29964a431d2a53e77251cc6b8b1bc975eb1c62da1781"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/OmniPBRBase.mdl",
+      "size": 19369,
+      "hash": {
+        "sha256": "a8fd9fe174e91892e94d06da90ba453a124024c2ce2c033be9d82c9e2f76a3b7"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/OmniPBR_ClearCoat.mdl",
+      "size": 29789,
+      "hash": {
+        "sha256": "d84c5ba482561c0eaea2e0c5b607358af549e36cd921773462f92dbc4f32cbc3"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/t_bottledWater_white_b01_alb.png",
+      "size": 361172,
+      "hash": {
+        "sha256": "7c766f1aa65c83888d2d2ea0a3e3cbcc5206a9ca499fc6cdac2467840466bb84"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/t_bottledWater_white_b01_nor.png",
+      "size": 770357,
+      "hash": {
+        "sha256": "e329429d449792558b2aa1a876a8cf587c3cc2499f987184f22b4f0859a629ee"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/t_bottledWater_white_b01_orm.png",
+      "size": 603196,
+      "hash": {
+        "sha256": "615d819b457c051f6a7ba57b9efab98953e0914eafb50ec535b90c548c48e1d6"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/.thumbs/256x256/t_bottledWater_white_b01_alb.png.png",
+      "size": 44528,
+      "hash": {
+        "sha256": "14d365a92c76e88eb2acc0ea25eb1bd28ea0ac9a0fff7ece26bf2c2c19c7cbfc"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/.thumbs/256x256/t_bottledWater_white_b01_nor.png.png",
+      "size": 48339,
+      "hash": {
+        "sha256": "eeb36664af13ca14a1f76eb3b05a1e540c7b5b03a5abeb5ccdfa3262190aaf27"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/.thumbs/256x256/t_bottledWater_white_b01_orm.png.png",
+      "size": 49836,
+      "hash": {
+        "sha256": "271aa15578ee1586e8d680a0d2ee74cb3ffe10ac47bafb83f8ecbc66094f867a"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/.thumbs/512x512/t_bottledWater_white_b01_alb.png.png",
+      "size": 156013,
+      "hash": {
+        "sha256": "7c59a23ee01ae56af8b83076c6d0fe31f15b05ed6e27dc3bd917db31cb9e1114"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/.thumbs/512x512/t_bottledWater_white_b01_nor.png.png",
+      "size": 206294,
+      "hash": {
+        "sha256": "7884809cc060309c3c4007c963114cc445a25e00792efe805a6d841bd6ecf839"
+      }
+    },
+    {
+      "relative_path": "simready_usd/source_assets/.thumbs/512x512/t_bottledWater_white_b01_orm.png.png",
+      "size": 183533,
+      "hash": {
+        "sha256": "d6e300b03835c0e900119b386f5525001e3aa012b44f34f04ad6f618ea01358c"
+      }
+    }
+  ]
+}

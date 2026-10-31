@@ -1,0 +1,183 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary SimReady_Metadata = {
+            dictionary Variants = {
+                dictionary Physics = {
+                    dictionary MuJoCo = {
+                        string activateOption = "Enabled"
+                        string prim = "/RootNode"
+                        string variantSetName = "MuJoCo"
+                    }
+                    dictionary Newton = {
+                        string activateOption = "Enabled"
+                        string prim = "/RootNode"
+                        string variantSetName = "Newton"
+                    }
+                    dictionary PhysX = {
+                        string activateOption = "Enabled"
+                        string prim = "/RootNode"
+                        string variantSetName = "PhysX"
+                    }
+                }
+            }
+            string asset_location = "simready_content\\common_assets\\props_food\\food_beverage_bottledWater_b01\\simready_physx_usd\\sm_food_beverage_bottledWater_b01_01.usd"
+            string asset_type = "prop"
+            string uuid = "01d8dcfc-125b-419e-a8c1-698426c03840"
+            dictionary validation = {
+                string profile = "Robotics-Prop"
+                string profile_version = "3.1.0"
+                dictionary validated_features = {
+                    dictionary "2026-01-28" = {
+                        dictionary FET000_CORE = {
+                            string dependencies = "[]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET001_BASE_NEUTRAL = {
+                            string dependencies = "[]"
+                            string "failing requirements" = "['AA.001']"
+                            bool passed = 0
+                            string version = "0.1.0"
+                        }
+                        dictionary FET003_BASE_NEUTRAL = {
+                            string dependencies = "[]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET003_BASE_PHYSX = {
+                            string dependencies = "[{'FET003_BASE_NEUTRAL': {'version': '0.1.0'}}]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET004_BASE_NEUTRAL = {
+                            string dependencies = "[{'FET003_BASE_NEUTRAL': {'version': '0.1.0'}}]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET004_BASE_PHYSX = {
+                            string dependencies = "[{'FET003_BASE_PHYSX': {'version': '0.1.0'}}, {'FET004_BASE_NEUTRAL': {'version': '0.1.0'}}]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET005_BASE_NEUTRAL = {
+                            string dependencies = "[]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET006_BASE_MDL = {
+                            string dependencies = "[]"
+                            string "failing requirements" = "['VM.MDL.001']"
+                            bool passed = 0
+                            string version = "0.1.0"
+                        }
+                    }
+                }
+            }
+            dictionary wikidata = {
+                string curated_path = "bottle/plastic_bottle"
+                string full_path = "entity/object/container/container/bottle/plastic bottle"
+                string qcode = "Q1757946"
+            }
+        }
+        string asset_dir = ":/SimReady/omniverse/simready_next/Projects/simready_content/common_assets/props_food/food_beverage_bottledWater_b01"
+        string asset_name = "food_beverage_bottledWater_b01"
+        string asset_type = "prop"
+        string profile = "Prop-Robotics-Neutral"
+        string source_file = "../simready_usd/sm_food_beverage_bottledWater_b01_01.usd"
+        string usd_date_generated = "2026-01-28 21:50:43"
+        bool used_dsrs_exporter = 1
+    }
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Scope "Instances"
+{
+    def Xform "sm_food_beverage_bottledWater_b01_body_mesh_00" (
+        prepend references = @./geometries.usd@</Geometries/sm_food_beverage_bottledWater_b01_body_mesh_00>
+    )
+    {
+        over "sm_food_beverage_bottledWater_b01_body_mesh_00" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysicsMassAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "MjcMeshCollisionAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/sm_food_beverage_bottledWater_b01_body_mesh_00/VisualMaterials/m_trans__plastic__bottledWater_b01>
+            uniform int mjc:group = 2
+            uniform token mjc:inertia = "convex"
+            uniform int mjc:maxhullvert = -1
+            uniform token physics:approximation = "convexHull"
+            point3f physics:centerOfMass = (3.9686224e-8, 1.3315245e-8, 0.12802666)
+            float3 physics:diagonalInertia = (0.0016651811, 0.0016651805, 0.0004979901)
+            float physics:mass = 0.25039706
+            quatf physics:principalAxes = (0.743756, 0, -0, -0.6684512)
+            token subsetFamily:materialBind:familyType = "nonOverlapping"
+
+            over "m_trans__plastic__bottledWater_b01" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/sm_food_beverage_bottledWater_b01_body_mesh_00/VisualMaterials/m_trans__plastic__bottledWater_b01>
+            }
+
+            over "m_opaque__plastic__bottledWater_b01" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/sm_food_beverage_bottledWater_b01_body_mesh_00/VisualMaterials/m_opaque__plastic__bottledWater_b01>
+            }
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "m_trans__plastic__bottledWater_b01" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/m_trans__plastic__bottledWater_b01>
+            )
+            {
+            }
+
+            def Material "m_opaque__plastic__bottledWater_b01" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/m_opaque__plastic__bottledWater_b01>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "sm_food_beverage_bottledWater_b01_cap_mesh_00" (
+        prepend references = @./geometries.usd@</Geometries/sm_food_beverage_bottledWater_b01_cap_mesh_00>
+    )
+    {
+        over "sm_food_beverage_bottledWater_b01_cap_mesh_00" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysicsMassAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "MjcMeshCollisionAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/sm_food_beverage_bottledWater_b01_cap_mesh_00/VisualMaterials/m_opaque__plastic__bottledWater_b01>
+            uniform int mjc:group = 2
+            uniform token mjc:inertia = "convex"
+            uniform int mjc:maxhullvert = -1
+            uniform token physics:approximation = "convexHull"
+            point3f physics:centerOfMass = (-2.0434736e-10, 2.2436895e-10, 1.0207667e-7)
+            float3 physics:diagonalInertia = (6.201671e-7, 6.201674e-7, 8.320071e-7)
+            float physics:mass = 0.004944255
+            quatf physics:principalAxes = (1, 0, 0, 0)
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "m_opaque__plastic__bottledWater_b01" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/m_opaque__plastic__bottledWater_b01>
+            )
+            {
+            }
+        }
+    }
+}
+

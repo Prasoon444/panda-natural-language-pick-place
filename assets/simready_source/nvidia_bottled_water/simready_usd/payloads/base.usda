@@ -1,0 +1,343 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary SimReady_Metadata = {
+            dictionary Variants = {
+                dictionary Physics = {
+                    dictionary MuJoCo = {
+                        string activateOption = "Enabled"
+                        string prim = "/RootNode"
+                        string variantSetName = "MuJoCo"
+                    }
+                    dictionary Newton = {
+                        string activateOption = "Enabled"
+                        string prim = "/RootNode"
+                        string variantSetName = "Newton"
+                    }
+                    dictionary PhysX = {
+                        string activateOption = "Enabled"
+                        string prim = "/RootNode"
+                        string variantSetName = "PhysX"
+                    }
+                }
+            }
+            string asset_location = "simready_content\\common_assets\\props_food\\food_beverage_bottledWater_b01\\simready_physx_usd\\sm_food_beverage_bottledWater_b01_01.usd"
+            string asset_type = "prop"
+            string uuid = "01d8dcfc-125b-419e-a8c1-698426c03840"
+            dictionary validation = {
+                string profile = "Robotics-Prop"
+                string profile_version = "3.1.0"
+                dictionary validated_features = {
+                    dictionary "2026-01-28" = {
+                        dictionary FET000_CORE = {
+                            string dependencies = "[]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET001_BASE_NEUTRAL = {
+                            string dependencies = "[]"
+                            string "failing requirements" = "['AA.001']"
+                            bool passed = 0
+                            string version = "0.1.0"
+                        }
+                        dictionary FET003_BASE_NEUTRAL = {
+                            string dependencies = "[]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET003_BASE_PHYSX = {
+                            string dependencies = "[{'FET003_BASE_NEUTRAL': {'version': '0.1.0'}}]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET004_BASE_NEUTRAL = {
+                            string dependencies = "[{'FET003_BASE_NEUTRAL': {'version': '0.1.0'}}]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET004_BASE_PHYSX = {
+                            string dependencies = "[{'FET003_BASE_PHYSX': {'version': '0.1.0'}}, {'FET004_BASE_NEUTRAL': {'version': '0.1.0'}}]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET005_BASE_NEUTRAL = {
+                            string dependencies = "[]"
+                            bool passed = 1
+                            string version = "0.1.0"
+                        }
+                        dictionary FET006_BASE_MDL = {
+                            string dependencies = "[]"
+                            string "failing requirements" = "['VM.MDL.001']"
+                            bool passed = 0
+                            string version = "0.1.0"
+                        }
+                    }
+                }
+            }
+            dictionary wikidata = {
+                string curated_path = "bottle/plastic_bottle"
+                string full_path = "entity/object/container/container/bottle/plastic bottle"
+                string qcode = "Q1757946"
+            }
+        }
+        string asset_dir = ":/SimReady/omniverse/simready_next/Projects/simready_content/common_assets/props_food/food_beverage_bottledWater_b01"
+        string asset_name = "food_beverage_bottledWater_b01"
+        string asset_type = "prop"
+        string profile = "Prop-Robotics-Neutral"
+        string source_file = "../simready_usd/sm_food_beverage_bottledWater_b01_01.usd"
+        string usd_date_generated = "2026-01-28 21:50:43"
+        bool used_dsrs_exporter = 1
+    }
+    defaultPrim = "RootNode"
+    metersPerUnit = 1
+    subLayers = [
+        @./Physics/physics.usda@
+    ]
+    upAxis = "Z"
+)
+
+def Xform "RootNode" (
+    prepend apiSchemas = ["SemanticsLabelsAPI:wikidata_class", "SemanticsAPI:wikidata_class", "SemanticsLabelsAPI:wikidata_qcode", "SemanticsAPI:wikidata_qcode"]
+    assetInfo = {
+        asset identifier = @../sm_food_beverage_bottledWater_b01_01.usd@
+        string name = "sm_food_beverage_bottledWater_b01_01"
+    }
+    customData = {
+        dictionary Blender = {
+            bool generated = 1
+        }
+        dictionary omni = {
+            dictionary cip = {
+                string timestamp = "2026-01-28 21:52:01"
+                string type = "prop"
+                dictionary validator = {
+                    string[] rules = []
+                    string version = "1.1.6"
+                }
+            }
+        }
+    }
+)
+{
+    custom string omni:simready:documentation = "water bottle"
+    string semantic:wikidata_class:params:semanticData = "plastic bottle"
+    string semantic:wikidata_class:params:semanticType = "wikidata_class"
+    string semantic:wikidata_qcode:params:semanticData = "Q1757946"
+    string semantic:wikidata_qcode:params:semanticType = "wikidata_qcode"
+    token[] semantics:labels:wikidata_class = ["plastic bottle"]
+    token[] semantics:labels:wikidata_qcode = ["Q1757946"]
+
+    def Scope "Materials"
+    {
+    }
+
+    def Scope "Geometry"
+    {
+        def Xform "sm_food_beverage_bottledWater_b01_body_obj_00"
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "sm_food_beverage_bottledWater_b01_body_obj_00"
+            custom double4 pxr:physics:principalAxes = (0.7437559962272644, 0, -0, -0.668451189994812)
+            custom float3 pxr:usd:physics_centerofmass = (3.9686224e-8, 1.3315245e-8, 0.12802666)
+            custom double3 pxr:usd:physics_inertia = (0.001665181080567817, 0.0016651806059130067, 0.0004979900902760461)
+            custom double pxr:usd:physics_mass = 0.2503970424030285
+            float3 xformOp:rotateXYZ
+            float3 xformOp:scale
+            double3 xformOp:translate
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+            def Xform "sm_food_beverage_bottledWater_b01_body_mesh_00" (
+                active = true
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                instanceable = true
+                prepend references = @./instances.usda@</Instances/sm_food_beverage_bottledWater_b01_body_mesh_00>
+            )
+            {
+                custom rel material:binding:physics = </RootNode/PhysicsMaterials/physics_mat_m_trans__plastic__bottledWater_b01>
+            }
+
+            def Xform "Grasp_Point_1_1"
+            {
+                token visibility = "invisible"
+                float3 xformOp:rotateXYZ = (0, -0, 89.92608)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.0006450116634368896, -0.0791548490524292, 0.06787818670272827)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Grasp_Point_1_2"
+            {
+                token visibility = "invisible"
+                float3 xformOp:rotateXYZ = (0, -0, 89.92608)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.0006450116634368896, 0.0855894386768341, 0.06787818670272827)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Grasp_Point_2_1"
+            {
+                token visibility = "invisible"
+                float3 xformOp:rotateXYZ = (0, -0, 89.951485)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.0004233419895172119, -0.07945557683706284, 0.1967642903327942)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Grasp_Point_2_2"
+            {
+                token visibility = "invisible"
+                float3 xformOp:rotateXYZ = (0, -0, 89.951485)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.0004233419895172119, 0.08561968803405762, 0.1967642903327942)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "grasp_identifier"
+            {
+                custom int intersection_face_index = 1282
+                custom float3 intersection_location = (-0.00025913096, -0.029875394, 0.06787819)
+                custom float3 intersection_normal = (-0.053265717, -0.99848765, 0.013608268)
+                custom string intersection_object = "sm_food_beverage_bottledWater_b01_body_obj_00"
+                custom bool intersections_dirty = 1
+                uniform token purpose = "guide"
+                token visibility = "invisible"
+                float3 xformOp:rotateXYZ = (0, 0, 0)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def BasisCurves "grasp_identifier_curve"
+                {
+                    int[] curveVertexCounts = [2]
+                    float3[] extent = [(-0.0056450116, -0.08415485, 0.062878184), (0.0056450116, 0.09058944, 0.07287819)]
+                    point3f[] points = [(-0.00064501166, -0.07915485, 0.06787819), (0.00064501166, 0.08558944, 0.06787819)]
+                    float[] primvars:tilt = [0, 0] (
+                        interpolation = "vertex"
+                    )
+                    uniform token purpose = "guide"
+                    uniform token type = "linear"
+                    float[] widths = [0.01, 0.01] (
+                        interpolation = "vertex"
+                    )
+                    uniform token wrap = "nonperiodic"
+                    float3 xformOp:rotateXYZ
+                    float3 xformOp:scale
+                    double3 xformOp:translate
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def Xform "grasp_identifier_001"
+            {
+                custom int intersection_face_index = 1081
+                custom float3 intersection_location = (-0.00013565889, -0.02336692, 0.19676429)
+                custom float3 intersection_normal = (-0.047652185, -0.89322615, 0.4470753)
+                custom string intersection_object = "sm_food_beverage_bottledWater_b01_body_obj_00"
+                custom bool intersections_dirty = 1
+                uniform token purpose = "guide"
+                token visibility = "invisible"
+                float3 xformOp:rotateXYZ = (0, 0, 0)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def BasisCurves "grasp_identifier_curve_001"
+                {
+                    int[] curveVertexCounts = [2]
+                    float3[] extent = [(-0.005423342, -0.08445558, 0.1917643), (0.005423342, 0.09061969, 0.20176429)]
+                    point3f[] points = [(-0.000423342, -0.07945558, 0.19676429), (0.000423342, 0.08561969, 0.19676429)]
+                    float[] primvars:tilt = [0, 0] (
+                        interpolation = "vertex"
+                    )
+                    uniform token purpose = "guide"
+                    uniform token type = "linear"
+                    float[] widths = [0.01, 0.01] (
+                        interpolation = "vertex"
+                    )
+                    uniform token wrap = "nonperiodic"
+                    float3 xformOp:rotateXYZ
+                    float3 xformOp:scale
+                    double3 xformOp:translate
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+        }
+
+        def Xform "sm_food_beverage_bottledWater_b01_cap_obj_00" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+            instanceable = true
+            prepend references = @./instances.usda@</Instances/sm_food_beverage_bottledWater_b01_cap_mesh_00>
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "sm_food_beverage_bottledWater_b01_cap_obj_00"
+            custom rel material:binding:physics = </RootNode/PhysicsMaterials/physics_mat_m_opaque__plastic__bottledWater_b01>
+            custom double4 pxr:physics:principalAxes = (1, 0, 0, 0)
+            custom float3 pxr:usd:physics_centerofmass = (-2.0434736e-10, 2.2436895e-10, 1.0207667e-7)
+            custom double3 pxr:usd:physics_inertia = (6.201671120262795e-7, 6.201673945378839e-7, 8.32007136006654e-7)
+            custom double pxr:usd:physics_mass = 0.004944255250179594
+            quatd xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (1.815196242e-7, -6.670630626e-8, 0.2365353703)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+    }
+
+    def Scope "ReferencePrims"
+    {
+        def Xform "sm_food_beverage_bottledWater_b01_body_joint_00" (
+            prepend apiSchemas = ["CollectionAPI:sm_food_beverage_bottledWater_b01_body_joint_00"]
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "sm_food_beverage_bottledWater_b01_body_joint_00"
+            rel collection:sm_food_beverage_bottledWater_b01_body_joint_00:includes = </RootNode/Geometry/sm_food_beverage_bottledWater_b01_body_obj_00>
+        }
+
+        def Xform "sm_food_beverage_bottledWater_b01_cap_joint_00" (
+            prepend apiSchemas = ["CollectionAPI:sm_food_beverage_bottledWater_b01_cap_joint_00"]
+        )
+        {
+            custom bool _renamed = 1
+            custom string _renamed_as = "sm_food_beverage_bottledWater_b01_cap_joint_00"
+            rel collection:sm_food_beverage_bottledWater_b01_cap_joint_00:includes = </RootNode/Geometry/sm_food_beverage_bottledWater_b01_cap_obj_00>
+            custom double pxr:usd:physics:breakForce = inf
+            custom double pxr:usd:physics:breakTorque = inf
+            custom string pxr:usd:physics:joint:body0 = "sm_food_beverage_bottledWater_b01_body_obj_00"
+            custom string pxr:usd:physics:joint:body1 = "sm_food_beverage_bottledWater_b01_cap_obj_00"
+            custom string pxr:usd:physics:joint:type = "fixed"
+            custom double3 pxr:usd:physics:localPos0 = (1.8151962422052748e-7, -6.67063062564921e-8, 0.23653537034988403)
+            custom double3 pxr:usd:physics:localPos1 = (0, 0, 0)
+            custom double4 pxr:usd:physics:localRot0 = (1, 0, 0, 0)
+            custom double4 pxr:usd:physics:localRot1 = (1, 0, 0, 0)
+            float3 xformOp:rotateXYZ = (0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (1.8151962422052748e-7, -6.67063062564921e-8, 0.23653537034988403)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+        }
+    }
+
+    def Scope "Grasp"
+    {
+    }
+
+    def Scope "PhysicsMaterials"
+    {
+        def Material "physics_mat_m_trans__plastic__bottledWater_b01"
+        {
+        }
+
+        def Material "physics_mat_m_opaque__plastic__bottledWater_b01"
+        {
+        }
+    }
+
+    def Scope "Joints"
+    {
+    }
+
+    def Scope "VisualMaterials"
+    {
+    }
+}
+

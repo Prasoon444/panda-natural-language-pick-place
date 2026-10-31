@@ -1,0 +1,19 @@
+{
+  "format_version": "1.0",
+  "package_id": "simready.hf.nvidia.simready-assets.food_beverage_bottledWater_b01.2026.10.09_033946504008",
+  "license": "CC-BY-4.0",
+  "metadata": [
+    {
+      "name": "com.nvidia.simready.packaging.bom.json",
+      "hash": {
+        "sha256": "c81a37ad8bb4861cc53a5fb716b8f5404df6bb785329a8b665f94a15e68d91f8"
+      }
+    }
+  ],
+  "content_hash": {
+    "sha256": "6052d733cca113b28fbdadb4e0f3a573c132a0245f401eb1880f18cead4de28f"
+  },
+  "package_hash": {
+    "sha256": "cbafc7ad794395514db3f61bc0c79e4ceec5950580db422b3f6e7b05d00824ac"
+  }
+}

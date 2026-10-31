@@ -1,0 +1,81 @@
+<mujoco model="panda_coordinate_pick_place">
+  <!-- Local Panda model copy omits its 9-value standalone keyframe so this
+       scene can define a complete keyframe including the free objects. -->
+  <include file="robot.xml"/>
+
+  <visual>
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.3 0.3 0.3" specular="0 0 0"/>
+    <rgba haze="0.15 0.25 0.35 1"/>
+    <global azimuth="135" elevation="-25"/>
+  </visual>
+
+  <asset>
+    <!-- Inset the mug render slightly inside its unchanged collision proxy so
+         the visible finger meshes do not appear to pass through the mug. -->
+    <mesh name="simready_mug_coffee_visual" file="converted/simready_mug_coffee.obj"
+      scale="0.96 0.96 1"/>
+    <mesh name="simready_plate_visual" file="converted/simready_plate.obj"/>
+    <mesh name="simready_soda_can_visual" file="converted/simready_soda_can.obj"/>
+    <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="3072"/>
+    <texture type="2d" name="groundplane" builtin="checker" mark="edge"
+      rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3" markrgb="0.8 0.8 0.8" width="300" height="300"/>
+    <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5" reflectance="0.2"/>
+  </asset>
+
+  <worldbody>
+    <light name="table_light" pos="0.5 0 1.8" dir="0 0 -1" directional="true"/>
+    <geom name="floor" type="plane" size="0 0 0.05" material="groundplane"/>
+
+    <!-- Table top is at z=0.38 m. -->
+    <body name="table" pos="0.52 0 0.34">
+      <geom name="table_top" type="box" size="0.42 0.55 0.04" rgba="0.48 0.31 0.19 1"
+        friction="1.2 0.02 0.002"/>
+      <!-- Candidate placement spots; the executor chooses one with clearance. -->
+      <site name="table_place_site" pos="0 -0.30 0.04" size="0.0001" rgba="1 0 0 0"/>
+      <site name="table_place_site_2" pos="-0.10 -0.30 0.04" size="0.0001" rgba="0.2 0.85 0.35 0"/>
+      <site name="table_place_site_3" pos="0.10 -0.30 0.04" size="0.0001" rgba="0.2 0.85 0.35 0"/>
+      <site name="table_place_site_4" pos="0 -0.38 0.04" size="0.0001" rgba="0.2 0.85 0.35 0"/>
+      <site name="table_place_site_5" pos="-0.10 -0.38 0.04" size="0.0001" rgba="0.2 0.85 0.35 0"/>
+    </body>
+
+    <!-- The mug handle points along -Y, clear of the Panda's X-axis finger closure. -->
+    <!-- SimReady mug visual includes its handle; the cylinder proxy covers the body. -->
+    <body name="coffee_mug" pos="0.42 -0.16 0.420446">
+      <freejoint name="coffee_mug_free"/>
+      <geom name="coffee_mug_geom" type="cylinder" size="0.03623 0.04045" mass="0.06138"
+        group="3" rgba="0.48 0.28 0.18 1" friction="1.2 0.02 0.002" condim="4"/>
+      <geom name="coffee_mug_visual" type="mesh" mesh="simready_mug_coffee_visual"
+        pos="-0.0154534 0 0" contype="0" conaffinity="0" mass="0" group="2"
+        rgba="0.78 0.68 0.54 1"/>
+      <site name="coffee_mug_grasp_site" pos="0 0 0" size="0.0001" rgba="0 1 0 0"/>
+    </body>
+
+    <body name="plate" pos="0.62 0.12 0.39056">
+      <freejoint name="plate_free"/>
+      <geom name="plate_geom" type="cylinder" size="0.11584 0.01056" mass="0.36233857"
+        group="3" rgba="0.92 0.9 0.82 1" friction="1.2 0.02 0.002" condim="4"/>
+      <geom name="plate_visual" type="mesh" mesh="simready_plate_visual"
+        contype="0" conaffinity="0" mass="0" group="2" rgba="0.92 0.9 0.82 1"/>
+      <site name="plate_place_site" pos="0 0 0.01056" size="0.0001" rgba="1 0 0 0"/>
+    </body>
+
+    <body name="soda_can" pos="0.42 0.16 0.4335">
+      <freejoint name="soda_can_free"/>
+      <geom name="soda_can_geom" type="cylinder" size="0.0289 0.0535"
+        mass="0.17603214" group="3" rgba="0.75 0.12 0.1 1"
+        friction="1.2 0.02 0.002" condim="4"/>
+      <geom name="soda_can_visual" type="mesh" mesh="simready_soda_can_visual"
+        contype="0" conaffinity="0" mass="0" group="2" rgba="0.75 0.12 0.1 1"/>
+      <site name="soda_can_grasp_site" pos="0 0 0" size="0.0001" rgba="0 1 0 0"/>
+    </body>
+
+  </worldbody>
+
+  <!-- Joint values from the Panda home pose followed by object poses.
+       Free-joint quaternions are ordered w x y z. -->
+  <keyframe>
+    <key name="home_with_objects"
+      qpos="0 0 0 -1.57079 0 1.57079 -0.7853 0.04 0.04 0.42 -0.16 0.420446 0.70710678 0 0 0.70710678 0.62 0.12 0.39056 1 0 0 0 0.42 0.16 0.4335 1 0 0 0"
+      ctrl="0 0 0 -1.57079 0 1.57079 -0.7853 255"/>
+  </keyframe>
+</mujoco>
