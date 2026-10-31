@@ -24,11 +24,11 @@ Gemini maps paraphrased natural-language commands to the project's registered ob
 
 ![Language flexibility](assets/langauage_flexibility.gif)
 
-### Hindi command
+### Multilingual command support
 
-The Gemini planner can interpret a Hindi command and map it to the same supported pick-and-place actions.
+The Gemini planner can interpret commands in Hindi and map them to the same supported pick-and-place actions. The project is designed to accept supported requests across multiple languages and phrasing styles.
 
-![Hindi command](assets/hindi_command.gif)
+![Multilingual command support](assets/hindi_command.gif)
 
 ### Error handling
 
